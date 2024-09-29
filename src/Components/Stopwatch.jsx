@@ -5,7 +5,7 @@ const StopWatch=()=>{
     const[time,setTime]=useState(0)
     const fetchtime=(time)=>{
         let min=Math.floor(time/60);
-        let sec=Math.floor(time%60);
+        let sec=time%60;
         return `${min}:${sec<10?"0":""}${sec}`;
     }
 
@@ -26,7 +26,7 @@ const StopWatch=()=>{
         return(()=>{
              clearInterval(timerId);
         })
-    })
+    },[timerOn])
     return(
         <>
         <h1>StopWatch</h1>

@@ -11,7 +11,7 @@ const StopWatch=()=>{
 
     const handlereset=()=>{
         setTime(0);
-        setTimeron(!timerOn);
+        setTimeron(false);
     }
 
     useEffect(()=>{
@@ -32,7 +32,7 @@ const StopWatch=()=>{
         <h1>StopWatch</h1>
         <p>Time: {fetchtime(time)}</p>
         <button onClick={()=>setTimeron(!timerOn)}>{timerOn ?"Stop":"Start"}</button>
-        <button onClick={()=>handlereset()}>Reset</button>
+        <button onClick={handlereset()}>Reset</button>
         </>
     )
 }

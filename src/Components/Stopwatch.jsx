@@ -26,7 +26,7 @@ const StopWatch=()=>{
         return(()=>{
              clearInterval(timerId);
         })
-    },[timerOn])
+    },[timerOn,time])
     return(
         <>
         <h1>StopWatch</h1>

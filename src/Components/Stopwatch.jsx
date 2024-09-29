@@ -59,7 +59,6 @@ const Timer = () => {
 
   const handleReset = () => {
     setTimer(0);
-    setFlag(false);
   };
   useEffect(() => {
     let timerId;

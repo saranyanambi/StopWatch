@@ -6,7 +6,11 @@ const StopWatch=()=>{
     const fetchtime=(time)=>{
         let min=Math.floor(time/60);
         let sec=time%60;
-        return `${min}:${sec<10?"0":""}${sec}`;
+        return `${min}:${sec<10? "0" : ""}${sec}`;
+    }
+
+    const handletime=()=>{
+        setTimeron(!timerOn)
     }
 
     const handlereset=()=>{
@@ -31,7 +35,7 @@ const StopWatch=()=>{
         <>
         <h1>StopWatch</h1>
         <p>Time: {fetchtime(time)}</p>
-        <button onClick={()=>setTimeron(!timerOn)}>{timerOn ?"Stop":"Start"}</button>
+        <button onClick={handletime()}>{timerOn ?"Stop":"Start"}</button>
         <button onClick={()=>handlereset()}>Reset</button>
         </>
     )

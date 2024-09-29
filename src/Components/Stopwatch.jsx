@@ -73,7 +73,7 @@ const Timer = () => {
     return () => {
       clearInterval(timerId);
     };
-  }, [flag]);
+  }, [flag,timer]);
 
   return (
     <div>

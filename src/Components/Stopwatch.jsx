@@ -11,7 +11,7 @@ const StopWatch=()=>{
 
     const handlereset=()=>{
         setTime(0);
-        setTimeron();
+   
     }
 
     useEffect(()=>{

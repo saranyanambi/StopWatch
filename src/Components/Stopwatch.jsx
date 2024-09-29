@@ -30,7 +30,7 @@ const StopWatch=()=>{
     return(
         <>
         <h1>StopWatch</h1>
-        <p>Time:{fetchtime(time)}</p>
+        <p>Time: {fetchtime(time)}</p>
         <button onClick={()=>setTimeron(!timerOn)}>{timerOn ?"Stop":"Start"}</button>
         <button onClick={()=>handlereset()}>Reset</button>
         </>
